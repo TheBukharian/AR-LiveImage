@@ -3,12 +3,8 @@
     package="com.example.ar_liveimages">
 
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <!-- Limits app visibility in the Google Play Store to ARCore supported devices
-         (https://developers.google.com/ar/devices). -->
-    <uses-feature
-        android:name="android.hardware.camera.ar"
-        android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
 
     <application
         android:allowBackup="false"
@@ -17,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ARLiveImages"
-        android:fullBackupContent="fale">
+        android:fullBackupContent="false">
 
         <!-- "AR Required" app, requires "Google Play Services for AR" (ARCore)
          to be installed, as the app does not include any non-AR features. -->

@@ -1,0 +1,74 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Base stack',
+        },
+      ],
+      path: 'sampledata/mario-sculpture.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'mario_1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'marioD',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/mario-sculpture.fbx',
+    name: 'mario-sculpture',
+    recenter: 'root',
+    scale: 0.017375000000000002,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\mario-sculpture.fbm\\marioD.jpg',
+      name: 'marioD',
+      pipeline_name: 'mario-sculpture.fbm\\marioD.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
